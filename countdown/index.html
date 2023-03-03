@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="p-5 text-center bg-light">
+        <h1>Enter Date of till you want to start your countdown</h1>
+        <p>rerun to restart</p> 
+    </div>
+    <form class="text-center" id = "myform">
+
+        <div class="form-group" id="timer-form">
+            <label class="form-label" for="count-date">Select Date</label>
+            <input type="date" id="count-date" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="button" class="btn btn-info">Start</button>
+        </div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                              <h3 class="card-title">Days</h3>
+                              <h1 class="card-text" id ="count-days"></h1>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                              <h3 class="card-title">Hours</h3>
+                              <h1 class="card-text" id="count-hours"></h1>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                              <h3 class="card-title">Minutes</h3>
+                              <h1 class="card-text" id="count-mins"></h1>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                              <h3 class="card-title">Seconds</h3>
+                              <h1 class="card-text" id ="count-sec"></h1>
+                              </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+          </div>
+
+    </form>
+
+    <h1 class="display-3 text-center" id="time-text"></h1>
+
+    <script src="main.js"></script>
+</body>
+</html>
